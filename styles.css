@@ -1,0 +1,96 @@
+/* Apple San Francisco font */
+@font-face {
+  font-family: 'SF Pro';
+  src: url('fonts/SFPro-Regular.woff2') format('woff2'),
+    url('fonts/SFPro-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF Pro';
+  src: url('fonts/SFPro-Bold.woff2') format('woff2'),
+    url('fonts/SFPro-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+html {
+  background-color: #393339;
+}
+
+/* General Styles */
+body {
+  font-family: 'SF Pro', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+
+}
+
+h1 {
+  font-size: 28px;
+  margin: 20px 0;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+.item {
+  text-align: center;
+  background-color: #FFF;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+  .container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+/* Additional Styles */
+.description {
+  font-size: 14px;
+  color: #666;
+  margin-top: 10px;
+}
+
+/* JavaScript Styles */
+.hidden {
+  display: none;
+}
+
+/* Instagram-like Linear Gradient */
+.item {
+  background-image: linear-gradient(to bottom right, #FEDA75, #FA7E1E);
+}
+
+.item:hover {
+  background-image: none;
+  background-color: #FEDA75;
+}
